@@ -7,7 +7,9 @@ export default function MacbookScrollDemo() {
       <MacbookScroll
         title={
           <span>
-            This is Kunal Deshwal <br /> No kidding, Pure coding.
+            This is Kunal Deshwal <br />
+            Please find my resume below. <br />
+            This portfolio is under development.
           </span>
         }
         badge={
@@ -15,7 +17,7 @@ export default function MacbookScrollDemo() {
             <Badge className="h-10 w-10 transform -rotate-12" />
           </a>
         }
-        src={`https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D`}
+        src={`/resumePicture.png`}
         showGradient={false}
       />
     </div>
