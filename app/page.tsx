@@ -1,7 +1,21 @@
 import React from "react";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
-
-export default function MacbookScrollDemo() {
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+import { AnimatedTestimonialsDemo } from "@/components/animated-testimonals";
+import { CodeBlockDemo } from "@/components/code-block-demo";
+export default function Home() {
+  return (
+    <div>
+      <MacbookScrollDemo />;
+      <div className="h-[40rem] flex items-center justify-center">
+        <TextHoverEffect text="ACET" />
+      </div>
+      <AnimatedTestimonialsDemo />
+      <CodeBlockDemo />
+    </div>
+  );
+}
+function MacbookScrollDemo() {
   return (
     <div className="overflow-hidden dark:bg-[#0B0B0F] bg-white w-full">
       <MacbookScroll
