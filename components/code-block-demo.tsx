@@ -14,7 +14,7 @@ export function CodeBlockDemo() {
     <div className="max-w-3xl mx-auto w-full">
       <CodeBlock
         language="jsx"
-        filename="about.js"
+        filename="aboutMe.js"
         highlightLines={[9, 13, 14, 18]}
         code={code}
       />

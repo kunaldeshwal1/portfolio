@@ -6,6 +6,11 @@ import { CodeBlockDemo } from "@/components/code-block-demo";
 export default function Home() {
   return (
     <div>
+      <div className="absolute top-0 left-0">
+        <span className="text-white text-xs">
+          Most of the components are from AceternityUI
+        </span>
+      </div>
       <MacbookScrollDemo />;
       <div className="h-[40rem] flex items-center justify-center">
         <TextHoverEffect text="ACET" />
