@@ -111,11 +111,19 @@ export const AnimatedTestimonials = ({
               duration: 0.2,
               ease: "easeInOut",
             }}
+            className="flex flex-col gap-2"
           >
             <h3 className="text-2xl font-bold text-black">
               {testimonials[active].name}{" "}
             </h3>
-            <motion.p className="mt-4 text-lg text-gray-500 dark:text-neutral-300">
+            <a
+              href={testimonials[active].designation}
+              target="_"
+              className="text-sm  text-blue-400 hover:underline"
+            >
+              Link
+            </a>
+            <motion.p className="text-lg text-gray-500 dark:text-neutral-300 min-w-[350px]">
               {testimonials[active].quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
@@ -141,7 +149,7 @@ export const AnimatedTestimonials = ({
               ))}
             </motion.p>
           </motion.div>
-          <div className="flex gap-4 pt-12 md:pt-0 mt-2">
+          <div className="flex gap-4 pt-20 md:pt-0 mt-2">
             <button
               onClick={handlePrev}
               className="group/button flex h-7 w-7 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-800"

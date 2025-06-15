@@ -3,6 +3,7 @@ import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import { AnimatedTestimonialsDemo } from "@/components/animated-testimonals";
 import Footer from "@/components/footer";
+import SkillsSection from "@/components/skill-section";
 export default function Home() {
   return (
     <div>
@@ -11,14 +12,19 @@ export default function Home() {
           Components from Aceternity UI
         </span>
       </div>
-      <MacbookScrollDemo />
-      <div className="max-w-[48rem] m-auto">
-        <h1 className="text-3xl font-bold text-black mt-12 px-4">Projects</h1>
+      <div id="overview">
+        <MacbookScrollDemo />
+      </div>
+      <div id="skills">
+        <SkillsSection />
+      </div>
+      <div className="max-w-[48rem] m-auto" id="projects">
+        <h1 className=" flex justify-center text-3xl font-bold text-black mt-12 px-4">
+          Projects
+        </h1>
         <AnimatedTestimonialsDemo />
       </div>
-      <div id="footer">
-        <Footer />
-      </div>
+      <Footer />
     </div>
   );
 }
@@ -29,8 +35,6 @@ function MacbookScrollDemo() {
         title={
           <span>
             This is Kunal Deshwal <br />
-            Please find my resume below. <br />
-            This portfolio is under development.
           </span>
         }
         badge={
