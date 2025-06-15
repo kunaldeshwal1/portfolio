@@ -2,21 +2,23 @@ import React from "react";
 import { MacbookScroll } from "@/components/ui/macbook-scroll";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import { AnimatedTestimonialsDemo } from "@/components/animated-testimonals";
-import { CodeBlockDemo } from "@/components/code-block-demo";
+import Footer from "@/components/footer";
 export default function Home() {
   return (
     <div>
       <div className="absolute top-0 left-0">
         <span className="text-white text-xs">
-          Most of the components are from AceternityUI
+          Components from Aceternity UI
         </span>
       </div>
-      <MacbookScrollDemo />;
-      <div className="h-[40rem] flex items-center justify-center">
-        <TextHoverEffect text="ACET" />
+      <MacbookScrollDemo />
+      <div className="max-w-[48rem] m-auto">
+        <h1 className="text-3xl font-bold text-black mt-12 px-4">Projects</h1>
+        <AnimatedTestimonialsDemo />
       </div>
-      <AnimatedTestimonialsDemo />
-      <CodeBlockDemo />
+      <div id="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
@@ -36,7 +38,7 @@ function MacbookScrollDemo() {
             <Badge className="h-10 w-10 transform -rotate-12" />
           </a>
         }
-        src={`/resumePicture.png`}
+        src={`/aboutme.png`}
         showGradient={false}
       />
     </div>
@@ -64,20 +66,20 @@ const Badge = ({ className }: { className?: string }) => {
         fill="#219653"
       ></path>
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M27.0769 12H15V46H24.3846V38.8889H27.0769C34.7305 38.8889 41 32.9048 41 25.4444C41 17.984 34.7305 12 27.0769 12ZM24.3846 29.7778V21.1111H27.0769C29.6194 21.1111 31.6154 23.0864 31.6154 25.4444C31.6154 27.8024 29.6194 29.7778 27.0769 29.7778H24.3846Z"
         fill="#24292E"
       ></path>
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M18 11H29.0769C36.2141 11 42 16.5716 42 23.4444C42 30.3173 36.2141 35.8889 29.0769 35.8889H25.3846V43H18V11ZM25.3846 28.7778H29.0769C32.1357 28.7778 34.6154 26.39 34.6154 23.4444C34.6154 20.4989 32.1357 18.1111 29.0769 18.1111H25.3846V28.7778Z"
         fill="white"
       ></path>
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M17 10H29.0769C36.7305 10 43 15.984 43 23.4444C43 30.9048 36.7305 36.8889 29.0769 36.8889H26.3846V44H17V10ZM19 12V42H24.3846V34.8889H29.0769C35.6978 34.8889 41 29.7298 41 23.4444C41 17.1591 35.6978 12 29.0769 12H19ZM24.3846 17.1111H29.0769C32.6521 17.1111 35.6154 19.9114 35.6154 23.4444C35.6154 26.9775 32.6521 29.7778 29.0769 29.7778H24.3846V17.1111ZM26.3846 19.1111V27.7778H29.0769C31.6194 27.7778 33.6154 25.8024 33.6154 23.4444C33.6154 21.0864 31.6194 19.1111 29.0769 19.1111H26.3846Z"
         fill="#24292E"
       ></path>
