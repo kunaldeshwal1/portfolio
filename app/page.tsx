@@ -34,7 +34,7 @@ function MacbookScrollDemo() {
       <MacbookScroll
         title={
           <span>
-            This is Kunal Deshwal <br />
+            Hello, This is Kunal Deshwal <br />
           </span>
         }
         badge={

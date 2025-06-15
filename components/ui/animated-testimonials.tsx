@@ -119,7 +119,7 @@ export const AnimatedTestimonials = ({
             <a
               href={testimonials[active].designation}
               target="_"
-              className="text-sm  text-blue-400 hover:underline"
+              className="text-sm  text-blue-400 hover:underline w-fit"
             >
               Link
             </a>
