@@ -30,6 +30,7 @@ const skills = [
   { name: "Postman", icon: Settings, color: "text-orange-500" },
   { name: "VS Code", icon: Terminal, color: "text-blue-400" },
   { name: "Chrome Dev tools", icon: Chrome, color: "text-green-500" },
+  { name: "AEM Edge Delivery Services", icon: "Adobe", color: "text-red-500" },
 ];
 
 export default function SkillsSection() {
@@ -47,10 +48,18 @@ export default function SkillsSection() {
               className="bg-slate-700 rounded-2xl p-6 flex flex-col items-center justify-center hover:bg-slate-600 transition-colors duration-300 aspect-square group cursor-pointer"
             >
               <div className="mb-4 transform group-hover:scale-110 transition-transform duration-300">
-                <skill.icon
-                  size={48}
-                  className={`${skill.color} group-hover:drop-shadow-lg`}
-                />
+                {skill.icon === "Adobe" ? (
+                  <img
+                    src="/adobe.png" // Update this path to your actual image
+                    alt="Adobe"
+                    className={`${skill.color} group-hover:drop-shadow-lg h-[48px]`}
+                  />
+                ) : (
+                  <skill.icon
+                    size={48}
+                    className={`${skill.color} group-hover:drop-shadow-lg`}
+                  />
+                )}
               </div>
               <span className="text-white text-sm font-medium text-center leading-tight">
                 {skill.name}
